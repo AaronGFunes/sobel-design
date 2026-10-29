@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/Aaron/OneDrive/Documents/Classwork/spring26/ECE622/project/sobel/sobel.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel/sobel.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9a3973364be5408dbf3cd54b796db1b2"/>
@@ -48,6 +48,9 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/sobel_ip_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/sobel_ip_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/sobel_1_0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>

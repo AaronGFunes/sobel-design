@@ -1,0 +1,494 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Oct 27 21:55:29 2026
+# Process ID         : 3972
+# Current directory  : C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/sobel_bd_sobel_ip_0_1_synth_1
+# Command line       : vivado.exe -log sobel_bd_sobel_ip_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sobel_bd_sobel_ip_0_1.tcl
+# Log file           : C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/sobel_bd_sobel_ip_0_1_synth_1/sobel_bd_sobel_ip_0_1.vds
+# Journal file       : C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/sobel_bd_sobel_ip_0_1_synth_1\vivado.jou
+# Running On         : APC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 5 3600 6-Core Processor              
+# CPU Frequency      : 3600 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 17101 MB
+# Swap memory        : 7247 MB
+# Total Virtual      : 24349 MB
+# Available Virtual  : 9375 MB
+#-----------------------------------------------------------
+source sobel_bd_sobel_ip_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: sobel_bd_sobel_ip_0_1
+Command: synth_design -top sobel_bd_sobel_ip_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19532
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1051.207 ; gain = 467.312
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10929] literal value 'hE02 truncated to fit in 10 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:95]
+WARNING: [Synth 8-10929] literal value 'hE02 truncated to fit in 10 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:96]
+WARNING: [Synth 8-10929] literal value 'hE02 truncated to fit in 10 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:97]
+WARNING: [Synth 8-10929] literal value 'hE02 truncated to fit in 10 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:99]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:116]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:117]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:118]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:133]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:149]
+WARNING: [Synth 8-10929] literal value 'hE02 truncated to fit in 10 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:97]
+WARNING: [Synth 8-10929] literal value 'hE02 truncated to fit in 10 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:98]
+WARNING: [Synth 8-10929] literal value 'hE02 truncated to fit in 10 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:99]
+WARNING: [Synth 8-10929] literal value 'hE02 truncated to fit in 10 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:101]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:119]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:120]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:121]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:138]
+WARNING: [Synth 8-10929] literal value 'hC04 truncated to fit in 11 bits [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:154]
+INFO: [Synth 8-6157] synthesizing module 'sobel_bd_sobel_ip_0_1' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ip/sobel_bd_sobel_ip_0_1/synth/sobel_bd_sobel_ip_0_1.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'sobel_ip' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/hdl/sobel_ip.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sobel_ip_slave_lite_v1_0_S00_AXI' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/hdl/sobel_ip_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/hdl/sobel_ip_slave_lite_v1_0_S00_AXI.v:164]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/hdl/sobel_ip_slave_lite_v1_0_S00_AXI.v:366]
+INFO: [Synth 8-6157] synthesizing module 'sobel' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sobel_x' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_x' (0#1) [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_x.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sobel_y' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_y' (0#1) [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel_y.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'square_root' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sqrt.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'square_root' (0#1) [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sqrt.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'sobel' (0#1) [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sobel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_ip_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/hdl/sobel_ip_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_ip' (0#1) [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/hdl/sobel_ip.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_sobel_ip_0_1' (0#1) [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ip/sobel_bd_sobel_ip_0_1/synth/sobel_bd_sobel_ip_0_1.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element left_reg was removed.  [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sqrt.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element right_reg was removed.  [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/ipshared/1aa8/5ac5/sqrt.sv:36]
+WARNING: [Synth 8-7129] Port pixel_base_in[1][7] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][6] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][5] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][4] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][3] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][2] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][1] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][0] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][7] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][6] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][5] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][4] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][3] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][2] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][1] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][0] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][7] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][6] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][5] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][4] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][3] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][2] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][1] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][0] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][7] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][6] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][5] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][4] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][3] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][2] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][1] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][0] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][7] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][6] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][5] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][4] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][3] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][2] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][1] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][0] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][7] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][6] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][5] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][4] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][3] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][2] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][1] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][0] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module sobel_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module sobel_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module sobel_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module sobel_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module sobel_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module sobel_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1178.098 ; gain = 594.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1178.098 ; gain = 594.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1178.098 ; gain = 594.203
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1178.098 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1262.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1262.316 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1262.316 ; gain = 678.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1262.316 ; gain = 678.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1262.316 ; gain = 678.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_x'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_y'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'square_root'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel'
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'sobel_ip_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'sobel_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 s1_idle |                           000001 |                           000001
+                 s1_mult |                           000010 |                           000010
+                s1_add_1 |                           000100 |                           000100
+                s1_add_2 |                           001000 |                           001000
+                s1_add_3 |                           010000 |                           010000
+                 s1_done |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'sobel_x'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 s1_idle |                           000001 |                           000001
+                 s1_mult |                           000010 |                           000010
+                s1_add_1 |                           000100 |                           000100
+                s1_add_2 |                           001000 |                           001000
+                s1_add_3 |                           010000 |                           010000
+                 s1_done |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'sobel_y'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 s1_idle |                           000001 |                           000001
+                 s1_busy |                           000010 |                           000010
+                 s1_done |                           000100 |                           000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'square_root'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 s1_idle |                           000001 |                           000001
+               s1_filter |                           000010 |                           000010
+                 s1_mult |                           000100 |                           000100
+                  s1_add |                           001000 |                           001000
+             s1_sqr_root |                           010000 |                           010000
+                 s1_done |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'sobel'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'sobel_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'sobel_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1262.316 ; gain = 678.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   22 Bit       Adders := 1     
+	   3 Input   13 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 14    
++---Registers : 
+	               32 Bit    Registers := 12    
+	               22 Bit    Registers := 2     
+	               21 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 12    
+	               10 Bit    Registers := 12    
+	                8 Bit    Registers := 10    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	   4 Input   32 Bit        Muxes := 1     
+	  13 Input   32 Bit        Muxes := 10    
+	   4 Input   22 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 2     
+	   7 Input   22 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 4     
+	   7 Input   21 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 20    
+	   7 Input   11 Bit        Muxes := 10    
+	   4 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 16    
+	   7 Input   10 Bit        Muxes := 12    
+	   2 Input    8 Bit        Muxes := 2     
+	   7 Input    8 Bit        Muxes := 1     
+	   7 Input    6 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 9     
+	   3 Input    2 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 23    
+	   4 Input    1 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP a, operation Mode is: A*B.
+DSP Report: operator a is absorbed into DSP a.
+DSP Report: Generating DSP a, operation Mode is: A*B.
+DSP Report: operator a is absorbed into DSP a.
+WARNING: [Synth 8-7129] Port pixel_base_in[1][7] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][6] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][5] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][4] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][3] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][2] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][1] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[1][0] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][7] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][6] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][5] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][4] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][3] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][2] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][1] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][0] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][7] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][6] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][5] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][4] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][3] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][2] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][1] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[7][0] in module sobel_y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][7] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][6] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][5] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][4] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][3] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][2] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][1] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[3][0] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][7] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][6] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][5] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][4] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][3] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][2] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][1] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[4][0] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][7] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][6] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][5] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][4] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][3] in module sobel_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_base_in[5][2] in module sobel_x is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1262.316 ; gain = 678.422
+---------------------------------------------------------------------------------
+ Sort Area is  a_0 : 0 0 : 912 912 : Used 1 time 0
+ Sort Area is  a_2 : 0 0 : 912 912 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sobel       | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sobel       | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1369.262 ; gain = 785.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1369.676 ; gain = 785.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1379.754 ; gain = 795.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.496 ; gain = 1011.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.496 ; gain = 1011.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.496 ; gain = 1011.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.496 ; gain = 1011.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.496 ; gain = 1011.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.496 ; gain = 1011.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     5|
+|4     |LUT4 |     1|
+|5     |LUT5 |    53|
+|6     |LUT6 |    27|
+|7     |FDRE |   114|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.496 ; gain = 1011.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1595.496 ; gain = 927.383
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1595.496 ; gain = 1011.602
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1595.496 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1595.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d94ca983
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1595.496 ; gain = 1240.277
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1595.496 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/sobel_bd_sobel_ip_0_1_synth_1/sobel_bd_sobel_ip_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP sobel_bd_sobel_ip_0_1, cache-ID = b720307ae6904643
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1595.496 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/sobel_bd_sobel_ip_0_1_synth_1/sobel_bd_sobel_ip_0_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file sobel_bd_sobel_ip_0_1_utilization_synth.rpt -pb sobel_bd_sobel_ip_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 27 21:56:10 2026...
