@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="sobel_app" location="C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc_vitis/sobel_app" platform="C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc_vitis/sobel_plat/export/sobel_plat/sobel_plat.xpfm" platformUID="xilinx:zybo-z7-20::0.0(custom)" systemProject="sobel_app_system" sysConfig="sobel_plat" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="6d7d4e098d2b47d24d5c2d541868ed5c">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.158549905">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.591823677" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
