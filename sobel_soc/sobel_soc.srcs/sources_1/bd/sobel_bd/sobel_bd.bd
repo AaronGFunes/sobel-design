@@ -1392,7 +1392,7 @@
       },
       "sobel_ip_0": {
         "vlnv": "xilinx.com:user:sobel_ip:1.0",
-        "ip_revision": "4",
+        "ip_revision": "5",
         "xci_name": "sobel_bd_sobel_ip_0_2",
         "xci_path": "ip\\sobel_bd_sobel_ip_0_2\\sobel_bd_sobel_ip_0_2.xci",
         "inst_hier_path": "sobel_ip_0"

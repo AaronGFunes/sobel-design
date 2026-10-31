@@ -99,16 +99,17 @@ always @(posedge clk or negedge rst_n) begin
             gy_pixel_squared <= gy_pixel_squared;
             g_sum <= g_sum;
             start_sqrt <= start_sqrt;
-            done <= 1'b0;
             
             if(start_trig) begin
                 state <= s1_filter;
                 start_filter <= 1'b1;
                 pixel_out <= 8'h0;
+                done <= 1'b0;
             end else begin
                 start_filter <= start_filter;
                 state <= s1_idle;
                 pixel_out <= pixel_out;
+                done <= done;
             end  
 
         end

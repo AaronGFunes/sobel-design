@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Fri Oct 30 17:22:28 2026
+  **** Start of session at: Fri Oct 30 18:28:23 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -30,43 +30,43 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18332
+INFO: [Synth 8-7075] Helper process launched with PID 22772
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1034.164 ; gain = 469.391
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1036.551 ; gain = 469.871
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'sobel_bd_wrapper' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/hdl/sobel_bd_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'sobel_bd' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:13]
-INFO: [Synth 8-6157] synthesizing module 'sobel_bd_axi_smc_0' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-14436-APC/realtime/sobel_bd_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_axi_smc_0' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-14436-APC/realtime/sobel_bd_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'sobel_bd_processing_system7_0_0' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-14436-APC/realtime/sobel_bd_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_processing_system7_0_0' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-14436-APC/realtime/sobel_bd_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sobel_bd_axi_smc_0' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-27268-APC/realtime/sobel_bd_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_axi_smc_0' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-27268-APC/realtime/sobel_bd_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sobel_bd_processing_system7_0_0' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-27268-APC/realtime/sobel_bd_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_processing_system7_0_0' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-27268-APC/realtime/sobel_bd_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'sobel_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:200]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'sobel_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:200]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'sobel_bd_processing_system7_0_0' has 65 connections declared, but only 63 given [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:200]
-INFO: [Synth 8-6157] synthesizing module 'sobel_bd_rst_ps7_0_50M_0' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-14436-APC/realtime/sobel_bd_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_rst_ps7_0_50M_0' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-14436-APC/realtime/sobel_bd_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sobel_bd_rst_ps7_0_50M_0' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-27268-APC/realtime/sobel_bd_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_rst_ps7_0_50M_0' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-27268-APC/realtime/sobel_bd_rst_ps7_0_50M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'sobel_bd_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:264]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'sobel_bd_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:264]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'sobel_bd_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:264]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'sobel_bd_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:264]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'sobel_bd_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:264]
-INFO: [Synth 8-6157] synthesizing module 'sobel_bd_sobel_ip_0_2' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-14436-APC/realtime/sobel_bd_sobel_ip_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_sobel_ip_0_2' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-14436-APC/realtime/sobel_bd_sobel_ip_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sobel_bd_sobel_ip_0_2' [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-27268-APC/realtime/sobel_bd_sobel_ip_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_sobel_ip_0_2' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/.Xil/Vivado-27268-APC/realtime/sobel_bd_sobel_ip_0_2_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'sobel_bd' (0#1) [c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/synth/sobel_bd.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'sobel_bd_wrapper' (0#1) [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/hdl/sobel_bd_wrapper.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1144.840 ; gain = 580.066
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1147.582 ; gain = 580.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1144.840 ; gain = 580.066
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1147.582 ; gain = 580.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1144.840 ; gain = 580.066
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1147.582 ; gain = 580.902
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1144.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1147.582 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -83,22 +83,22 @@ Parsing XDC File [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject
 Finished Parsing XDC File [C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1144.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1147.582 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1144.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1147.582 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1144.840 ; gain = 580.066
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1147.582 ; gain = 580.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1144.840 ; gain = 580.066
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1147.582 ; gain = 580.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -369,10 +369,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for sobel_bd_i/axi_smc. (constraint f
 Applied set_property KEEP_HIERARCHY = SOFT for sobel_bd_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for sobel_bd_i/sobel_ip_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1144.840 ; gain = 580.066
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1147.582 ; gain = 580.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1144.840 ; gain = 580.066
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1147.582 ; gain = 580.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -395,25 +395,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1144.840 ; gain = 580.066
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1147.582 ; gain = 580.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1317.516 ; gain = 752.742
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1322.090 ; gain = 755.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1317.590 ; gain = 752.816
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1322.090 ; gain = 755.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1327.598 ; gain = 762.824
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1331.969 ; gain = 765.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -431,37 +431,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.793 ; gain = 979.020
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1548.660 ; gain = 981.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.793 ; gain = 979.020
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1548.660 ; gain = 981.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.793 ; gain = 979.020
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1548.660 ; gain = 981.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.793 ; gain = 979.020
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1548.660 ; gain = 981.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.793 ; gain = 979.020
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1548.660 ; gain = 981.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.793 ; gain = 979.020
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1548.660 ; gain = 981.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -487,16 +487,16 @@ Report Cell Usage:
 |4     |sobel_bd_sobel_ip_0           |     1|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.793 ; gain = 979.020
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1548.660 ; gain = 981.980
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1543.793 ; gain = 979.020
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.793 ; gain = 979.020
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1548.660 ; gain = 981.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1548.660 ; gain = 981.980
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1543.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1548.660 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1543.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1548.660 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -504,7 +504,7 @@ Synth Design complete | Checksum: 77f6255e
 INFO: [Common 17-83] Releasing license: Synthesis
 33 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1543.793 ; gain = 1215.105
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1548.660 ; gain = 1219.324
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.runs/synth_1/sobel_bd_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file sobel_bd_wrapper_utilization_synth.rpt -pb sobel_bd_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 17:23:10 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 18:29:05 2026...
