@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Tue Oct 27 21:58:14 2026
+| Date             : Fri Oct 30 17:24:32 2026
 | Host             : APC running 64-bit major release  (build 9200)
 | Command          : report_power -file sobel_bd_wrapper_power_routed.rpt -pb sobel_bd_wrapper_power_summary_routed.pb -rpx sobel_bd_wrapper_power_routed.rpx
 | Design           : sobel_bd_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.539        |
+| Total On-Chip Power (W)  | 1.541        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.402        |
+| Dynamic (W)              | 1.404        |
 | Device Static (W)        | 0.137        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 67.2         |
@@ -52,17 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.002 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |     1474 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      459 |     53200 |            0.86 |
-|   Register              |    <0.001 |      646 |    106400 |            0.61 |
-|   CARRY4                |    <0.001 |        4 |     13300 |            0.03 |
-|   Others                |     0.000 |      227 |       --- |             --- |
+| Clocks                  |     0.003 |        3 |       --- |             --- |
+| Slice Logic             |    <0.001 |     2921 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |     1135 |     53200 |            2.13 |
+|   Register              |    <0.001 |     1119 |    106400 |            1.05 |
+|   CARRY4                |    <0.001 |       74 |     13300 |            0.56 |
+|   Others                |     0.000 |      237 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        2 |     17400 |            0.01 |
-| Signals                 |    <0.001 |     1073 |       --- |             --- |
+| Signals                 |    <0.001 |     2092 |       --- |             --- |
+| DSPs                    |     0.000 |        2 |       220 |            0.91 |
 | PS7                     |     1.399 |        1 |       --- |             --- |
 | Static Power            |     0.137 |          |           |                 |
-| Total                   |     1.539 |          |           |                 |
+| Total                   |     1.541 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.003 |      0.014 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.018 |       0.005 |      0.014 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -148,12 +149,14 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| sobel_bd_wrapper         |     1.402 |
-|   sobel_bd_i             |     1.402 |
+| sobel_bd_wrapper         |     1.404 |
+|   sobel_bd_i             |     1.404 |
 |     axi_smc              |     0.003 |
 |       inst               |     0.003 |
 |     processing_system7_0 |     1.399 |
 |       inst               |     1.399 |
+|     sobel_ip_0           |     0.002 |
+|       inst               |     0.002 |
 +--------------------------+-----------+
 
 

@@ -13,7 +13,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sobel_bd_ax
 # IP: bd/sobel_bd/ip/sobel_bd_rst_ps7_0_50M_0/sobel_bd_rst_ps7_0_50M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sobel_bd_rst_ps7_0_50M_0 || ORIG_REF_NAME==sobel_bd_rst_ps7_0_50M_0} -quiet] -quiet
 
-# IP: bd/sobel_bd/ip/sobel_bd_sobel_ip_0_1/sobel_bd_sobel_ip_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sobel_bd_sobel_ip_0_1 || ORIG_REF_NAME==sobel_bd_sobel_ip_0_1} -quiet] -quiet
+# IP: bd/sobel_bd/ip/sobel_bd_sobel_ip_0_2/sobel_bd_sobel_ip_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==sobel_bd_sobel_ip_0_2 || ORIG_REF_NAME==sobel_bd_sobel_ip_0_2} -quiet] -quiet
 
 # XDC: c:/Users/Aaron/OneDrive/Documents/Classwork/Fall26/GradProject/sobel-design/sobel_soc/sobel_soc.gen/sources_1/bd/sobel_bd/sobel_bd_ooc.xdc

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Oct 27 21:56:55 2026
+| Date         : Fri Oct 30 17:23:10 2026
 | Host         : APC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file sobel_bd_wrapper_utilization_synth.rpt -pb sobel_bd_wrapper_utilization_synth.pb
 | Design       : sobel_bd_wrapper
@@ -157,7 +157,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +---------------------------------+------+
 |             Ref Name            | Used |
 +---------------------------------+------+
-| sobel_bd_sobel_ip_0_1           |    1 |
+| sobel_bd_sobel_ip_0_2           |    1 |
 | sobel_bd_rst_ps7_0_50M_0        |    1 |
 | sobel_bd_processing_system7_0_0 |    1 |
 | sobel_bd_axi_smc_0              |    1 |

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Oct 27 21:58:10 2026
+| Date         : Fri Oct 30 17:24:28 2026
 | Host         : APC running 64-bit major release  (build 9200)
 | Command      : report_drc -file sobel_bd_wrapper_drc_routed.rpt -pb sobel_bd_wrapper_drc_routed.pb -rpx sobel_bd_wrapper_drc_routed.rpx
 | Design       : sobel_bd_wrapper
@@ -24,18 +24,104 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 1
+             Checks found: 17
 +----------+----------+----------------------------+--------+
 | Rule     | Severity | Description                | Checks |
 +----------+----------+----------------------------+--------+
-| PDRC-136 | Warning  | SLICE_PairEqSame_C6C5_WARN | 1      |
+| DPIP-1   | Warning  | Input pipelining           | 4      |
+| DPOP-1   | Warning  | PREG Output pipelining     | 2      |
+| DPOP-2   | Warning  | MREG Output pipelining     | 2      |
+| PDRC-134 | Warning  | SLICE_PairEqSame_B6B5_WARN | 2      |
+| PDRC-136 | Warning  | SLICE_PairEqSame_C6C5_WARN | 3      |
+| PDRC-138 | Warning  | SLICE_PairEqSame_D6D5_WARN | 3      |
+| PDRC-144 | Warning  | SLICE_PairEqSame_C6C5_WARN | 1      |
 +----------+----------+----------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a input sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a input sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a__0 input sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a__0 input sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a output sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a__0 output sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a multiplier stage sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a__0 multiplier stage sobel_bd_i/sobel_ip_0/inst/sobel_ip_slave_lite_v1_0_S00_AXI_inst/u_sobel/a__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-134#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X35Y91 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#2 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X40Y90 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
 PDRC-136#1 Warning
 SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X28Y94 with different equations without A6 pin connected to Global Logic High.
+Luts C6LUT and C5LUT in use in site SLICE_X28Y90 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#2 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X35Y91 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#3 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X40Y90 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#1 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X28Y90 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#2 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X35Y91 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#3 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X40Y90 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#1 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X34Y87 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 
