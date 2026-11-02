@@ -3,6 +3,6 @@
 
 #include "bmp.h"
 
-int applyFilter(const BMPImage_t *src,BMPImage_t *dst);
+int applyFilter( BMPImage_t *src,BMPImage_t *dst);
 
 #endif

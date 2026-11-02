@@ -22,7 +22,7 @@
 #include "xil_printf.h"
 
 
-int hello_world()
+int test()
 {
     init_platform();
 

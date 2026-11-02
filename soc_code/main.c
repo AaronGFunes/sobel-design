@@ -41,23 +41,24 @@ int main(){
   if (bmpLoad(inputFile, &srcImg) != 0)
     return XST_FAILURE;
 
-  printf("Loaded: %dx%d, %d bits/pixel\n",
+  xil_printf("Loaded: %dx%d, %d bits/pixel\n",
          srcImg.width, srcImg.height, srcImg.bitDepth);
 
   //Apply filter
-//  if(applyFilter(&srcImg,&dstImg) != 0){
-//    bmpFree(&srcImg);
-//    return -1;
-//  }
+  if(applyFilter(&srcImg,&dstImg) != 0){
+	    bmpFree(&dstImg);
+	    bmpFree(&srcImg);
+	    return XST_FAILURE;
+  }
 
   
-  printf("Result: %dx%d\n", srcImg.width, srcImg.height);
+  xil_printf("Result: %dx%d\n", dstImg.width, dstImg.height);
 
-  if (bmpSave(outputFile, &srcImg) != 0)
+  if (bmpSave(outputFile, &dstImg) != 0)
     {
       bmpFree(&srcImg);
       bmpFree(&dstImg);
-      return -1;
+      return XST_FAILURE;
     }
   bmpFree(&dstImg);
   
