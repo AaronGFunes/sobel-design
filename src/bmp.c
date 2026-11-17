@@ -218,8 +218,6 @@ int bmpLoad(const char *filename, BMPImage_t *img)
     unsigned char *row = img->pixel + y*srcRowSize;
     for (int x=0; x<srcWidth;x++){
       unsigned char *px = row + x*bytesPerPixel;
-      printf("Pixel Location:(%u,%u),",x+1,srcHeight-y);
-      printf("Pixel value: %u\n",px[0]);        
       if(y <1){
         if(x<1){
           pixel_0_0 = 0;
@@ -231,11 +229,11 @@ int bmpLoad(const char *filename, BMPImage_t *img)
           pixel_0_2 = 0;
           pixel_1_2 = 0;
           pixel_2_2 = 0;
-          
+          /*
           printf(" |%u %u %u|\n |%u %u %u|\n |%u %u %u|\n"
                  ,pixel_0_0,pixel_1_0,pixel_2_0
                  ,pixel_0_1,pixel_1_1,pixel_2_1
-                 ,pixel_0_2,pixel_1_2,pixel_2_2);
+                 ,pixel_0_2,pixel_1_2,pixel_2_2); */
         } else if ( x>=srcWidth-1 ) {
           pixel_0_0 = px[srcRowSize - 1];
           pixel_1_0 = px[srcRowSize];
@@ -246,12 +244,12 @@ int bmpLoad(const char *filename, BMPImage_t *img)
           pixel_0_2 = 0;
           pixel_1_2 = 0;
           pixel_2_2 = 0;
-          
+          /*
           printf(" |%u %u %u|\n |%u %u %u|\n |%u %u %u|\n"
                  ,pixel_0_0,pixel_1_0,pixel_2_0
                  ,pixel_0_1,pixel_1_1,pixel_2_1
                  ,pixel_0_2,pixel_1_2,pixel_2_2);
-
+*/
         } else {
           pixel_0_0 = px[srcRowSize - 1];
           pixel_1_0 = px[srcRowSize];
@@ -262,11 +260,11 @@ int bmpLoad(const char *filename, BMPImage_t *img)
           pixel_0_2 = 0;
           pixel_1_2 = 0;
           pixel_2_2 = 0;
-          
+          /*
           printf(" |%u %u %u|\n |%u %u %u|\n |%u %u %u|\n"
                  ,pixel_0_0,pixel_1_0,pixel_2_0
                  ,pixel_0_1,pixel_1_1,pixel_2_1
-                 ,pixel_0_2,pixel_1_2,pixel_2_2);
+                 ,pixel_0_2,pixel_1_2,pixel_2_2);*/
         }        
       } else if (y >= srcHeight-1)
         if(x<1){
@@ -279,11 +277,11 @@ int bmpLoad(const char *filename, BMPImage_t *img)
           pixel_0_2 = 0;
           pixel_1_2 = px[-srcRowSize];
           pixel_2_2 = px[-srcRowSize+1];
-          
+          /*
           printf(" |%u %u %u|\n |%u %u %u|\n |%u %u %u|\n"
                  ,pixel_0_0,pixel_1_0,pixel_2_0
                  ,pixel_0_1,pixel_1_1,pixel_2_1
-                 ,pixel_0_2,pixel_1_2,pixel_2_2);
+                 ,pixel_0_2,pixel_1_2,pixel_2_2);*/
         } else if ( x>=srcWidth-1 ) {
           pixel_0_0 = 0;
           pixel_1_0 = 0;
@@ -294,11 +292,11 @@ int bmpLoad(const char *filename, BMPImage_t *img)
           pixel_0_2 = px[-srcRowSize-1];                
           pixel_1_2 = px[-srcRowSize];  
           pixel_2_2 = 0;
-          
+          /*
           printf(" |%u %u %u|\n |%u %u %u|\n |%u %u %u|\n"
                  ,pixel_0_0,pixel_1_0,pixel_2_0
                  ,pixel_0_1,pixel_1_1,pixel_2_1
-                 ,pixel_0_2,pixel_1_2,pixel_2_2);
+                 ,pixel_0_2,pixel_1_2,pixel_2_2);*/
 
         } else {          //get row above                    //column left
           pixel_0_0 = 0;
@@ -311,12 +309,15 @@ int bmpLoad(const char *filename, BMPImage_t *img)
           pixel_1_2 = px[-srcRowSize];
           pixel_2_2 = px[-srcRowSize+1];
           
-          printf(" |%u %u %u|\n |%u %u %u|\n |%u %u %u|\n"
+/*          printf(" |%u %u %u|\n |%u %u %u|\n |%u %u %u|\n"
                  ,pixel_0_0,pixel_1_0,pixel_2_0
                  ,pixel_0_1,pixel_1_1,pixel_2_1
                  ,pixel_0_2,pixel_1_2,pixel_2_2);
+                 */
         }              
       else {
+      printf("Pixel Location:(%u,%u),",x+1,srcHeight-y);
+      printf("Pixel value: %u\n",px[0]);        
           pixel_0_0 = px[srcRowSize - 1];
           pixel_1_0 = px[srcRowSize];    
           pixel_2_0 = px[srcRowSize+1];  

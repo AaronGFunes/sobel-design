@@ -95,8 +95,6 @@ int bmpLoad(const char *filename, BMPImage_t *img)
       f_mount(NULL,Path,0);
       return XST_FAILURE;
     }
-  xil_printf("%c\n",img->fileHeader[0]);
-  xil_printf("%c\n",img->fileHeader[1]);
 
   /* Verify BMP signature */
   if (img->fileHeader[0] != 'B' || img->fileHeader[1] != 'M')
@@ -110,7 +108,6 @@ int bmpLoad(const char *filename, BMPImage_t *img)
   // each call of fread, file position indicator for the stream is advanced by number of characters read.
   unsigned char sizeBuf[4];
   res = f_read(&fp,sizeBuf,4,byte_read_out);
-  xil_printf("%u\n",sizeBuf);
   if ( res != FR_OK)
     {
       xil_printf("ERROR: Cannot read info header size from '%s'\n", filename);
@@ -239,8 +236,6 @@ int bmpLoad(const char *filename, BMPImage_t *img)
   }
 
 
-  xil_printf("size of pixel : %u\n",sizeof(img->pixel));
-  xil_printf("size of pixel : %u\n",sizeof(img->infoHeader));
   res = f_read(&fp,img->pixel,307200,byte_read_out);
 
   if (res != FR_OK)
